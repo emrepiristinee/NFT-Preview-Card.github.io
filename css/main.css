@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Kumbh Sans', sans-serif; */
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    --Very-dark-blue-main: hsl(217, 54%, 11%); /* (main BG) */
+    --Very-dark-blue-card: hsl(216, 50%, 16%); /* (card BG) */
+    --Very-dark-blue: hsl(215, 32%, 27%); /* (line) */
+    --White: hsl(0, 0%, 100%);
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Very-dark-blue-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    height: 520px;
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 1em;
+}
+.card .main-photo{
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.card .link-eth{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--White);
+    padding: 0 0 0 20px;
+}
+.card .link-eth:hover{
+    color: var(--Cyan);
+}
+.card .description{
+    color: var(--Soft-blue);
+    opacity: 0.7;
+    padding: 15px 20px 0 20px;
+}
+.card .img-price{
+    display: flex;
+    padding: 20px;
+}
+.card .eth{
+    padding: 0px 10px 0 0;
+}
+.card .price{
+    color: var(--Cyan);
+}
+.card .clock{
+    padding: 0 10px 0 60px;
+}
+.card .days{
+    color: var(--Soft-blue);
+}
+.card hr{
+    display: block;
+    border: none;
+    height: 1px;
+    background: hsl(215, 32%, 27%);
+    margin: 0 20px 0 20px;
+}
+
+.card .bottom{
+    display: flex;
+    align-items: center;
+}
+.card .bottom img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 0 0 0 20px;
+}
+.card .bottom a{
+    text-decoration: none;
+    padding: 20px;
+    color: var(--White);
+    font-size: 14px;
+}
+.card .bottom a:hover{
+    color: var(--Cyan);
+}
+.card .bottom span{
+    color:var(--Soft-blue);
+}
+.attribution {
+    margin: 40px;
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
